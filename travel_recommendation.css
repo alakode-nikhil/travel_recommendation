@@ -1,0 +1,107 @@
+/* ===== Main Content & Background (exclude navbar) ===== */
+.main-content {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 56px);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('assets/Travel.jpg') center center/cover no-repeat;
+    color: #343a40;
+}
+
+/* Restore proper stacking for content/overlay */
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(245,245,245,0.80);
+    z-index: 1;
+}
+
+.content-center {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 6vw;
+}
+
+/* ===== Typography & Buttons ===== */
+.headline {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #222;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    max-width: 420px;
+    color: #444;
+    /*margin-bottom: 32px;*/
+}
+
+.btn-primary {
+    background-color: #333;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+/* ===== Social Media Icons ===== */
+.social-icons a {
+    color: #555;
+    font-size: 1.5rem;
+    margin-right: 24px;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #111;
+}
+
+/* ===== Navbar Monochrome Styling ===== */
+.navbar {
+    background-color: #eaeaea !important;
+}
+
+.nav-link, .navbar-brand {
+    color: #333 !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #111 !important;
+}
+
+/* ===== Search Bar & Buttons ===== */
+.form-control, .btn {
+    background-color: #fff;
+    color: #333;
+    border-radius: 0.2rem;
+    border: 1px solid #d1d1d1;
+}
+
+.btn-outline-primary {
+    border-color: #bcbcbc;
+    color: #333;
+}
+
+.btn-outline-primary:hover {
+    background-color: #bcbcbc;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    border-color: #bcbcbc;
+    color: #333;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #bcbcbc;
+    color: #fff;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us - TravelBloom</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- FontAwesome for Icons (if you want to use them for team members or elsewhere) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="travel_recommendation.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .navbar {
+            z-index: 10;
+            position: relative;
+        }
+        .main-content {
+            position: relative;
+            width: 100vw;
+            height: calc(100vh - 56px); /* Adjust based on navbar height */
+            top: 0;
+        }
+        @media (max-width: 991.98px) {
+            .main-content {
+                height: calc(100vh - 60px);
+            }
+        }
+        .about-section {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-left: 6vw;
+            padding-top: 6vh;
+            max-width: 700px;
+        }
+        .team-section {
+            position: relative;
+            z-index: 2;
+            padding-left: 6vw;
+            max-width: 700px;
+        }
+        .team-member {
+            margin-bottom: 1.5rem;
+        }
+        .team-member-name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: #222;
+        }
+        .team-member-role {
+            color: #444;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid d-flex justify-content-between align-items-center" style="width: 100%;">
+            <!-- Brand -->
+            <div>
+                <a class="navbar-brand font-weight-bold" href="#">TravelBloom</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <div>
+                <a class="nav-link d-inline-block px-3" href="travel-recommendation.html">Home</a>
+                <a class="nav-link d-inline-block px-3" href="about.html">About Us</a>
+                <a class="nav-link d-inline-block px-3" href="contact.html">Contact Us</a>
+            </div>
+
+            <form class="form-inline d-flex" id="searchForm" onsubmit="return false;">
+                <input class="form-control mr-2" type="search" placeholder="Search destinations or keywords" aria-label="Search" id="searchInput" />
+                <button class="btn btn-outline-primary mr-2" type="submit" id="searchBtn">Search</button>
+                <button class="btn btn-outline-secondary" type="button" id="resetBtn">Reset</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Main Content Area with background (excluding navbar) -->
+    <div class="main-content">
+        <div class="overlay"></div>
+        <div class="about-section">
+            <h1 class="headline mb-3">About TravelBloom</h1>
+            <p class="intro-text mb-4">
+                TravelBloom is dedicated to inspiring travelers to explore the world, discover new destinations, and embrace diverse cultures. <br>
+                Our platform is designed with clean aesthetics and user-friendly navigation to ensure a seamless, memorable planning experience.<br>
+                From bustling cities to serene beaches and iconic landmarks, we curate recommendations and insights to enable every journey to bloom.
+            </p>
+        </div>
+        <div class="team-section ">
+            <h2 class="headline mb-3" style="font-size:2rem;">Meet Our Team</h2>
+            <div class="team-member">
+                <span class="team-member-name">Nikhil Alakode</span>
+                <span class="team-member-role"> — Founder & CEO</span>
+            </div>
+            <div class="team-member">
+                <span class="team-member-name">Nandhana Gopinath</span>
+                <span class="team-member-role"> — CTO & Lead Developer</span>
+            </div>
+            <div class="team-member">
+                <span class="team-member-name">Neehar Chandran</span>
+                <span class="team-member-role"> — Head of Marketing</span>
+            </div>
+            <div class="team-member">
+                <span class="team-member-name">Kiran P</span>
+                <span class="team-member-role"> — Travel Content Specialist</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Bootstrap JS (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
